@@ -15,4 +15,4 @@ class Authentication::UsersControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to products_url
   end
 
-end👱
+end
