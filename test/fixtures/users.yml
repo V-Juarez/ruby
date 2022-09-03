@@ -10,7 +10,7 @@ maria:
   username: maria02
   password_digest: <%= BCrypt::Password.create('testme', cost: 5) %>
 
-oscar:
-  email: oscar@vendelo.com
-  username: oscar03
+pepe:
+  email: pepe@vendelo.com
+  username: pepito
   password_digest: <%= BCrypt::Password.create('testme', cost: 5) %>
