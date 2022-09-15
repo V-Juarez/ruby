@@ -1,7 +1,7 @@
 module Favoritable
   extend ActiveSupport::Concern
 
-  Included do
+  included do
     has_many :favorites, dependent: :destroy
 
     def favorite!
@@ -12,9 +12,8 @@ module Favoritable
       favorite.destroy
     end
 
-    def favorite!
+    def favorite
       favorites.find_by(user: Current.user)
     end
   end
 end
-
